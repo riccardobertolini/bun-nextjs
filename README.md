@@ -19,5 +19,5 @@ On the browser:
 
 ## Deployed on Vercel
 
-Currently deployed on [Vercel Platform](https://bun-nextjs-2.vercel.app/).
+Currently deployed on [Vercel Platform](https://bun-nextjs.vercel.app/).
 

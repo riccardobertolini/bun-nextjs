@@ -1,4 +1,4 @@
-# Next.js with Bun runtime
+# Next.js with Bun runtime!
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with Bun.
 

@@ -9,20 +9,7 @@ const pokeImage = async (pokemon) => {
 } 
 
 
-export default function Home({}) {
-  const [data, setData] = useState();
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const dataSet = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
-      .then(response => response.json());
-
-      setData(dataSet);
-    };
-
-    fetchData();
-  }, []);
-
+export default function Home({data}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -40,4 +27,11 @@ export default function Home({}) {
       </div>
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const data = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151').then(response => response.json());
+
+  return { props: { data } }
 }

@@ -8,7 +8,6 @@ const pokeImage = async (pokemon) => {
   return pokeImage.sprites.back_default;
 } 
 
-
 export default function Home({data}) {
   return (
     <div className={styles.container}>

@@ -21,7 +21,7 @@ export default function Home({}) {
     };
 
     fetchData();
-  }, [data]);
+  }, []);
 
   return (
     <div className={styles.container}>
